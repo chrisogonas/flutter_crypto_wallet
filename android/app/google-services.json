@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "365481229838",
+    "firebase_url": "https://friendly-eats-974d6.firebaseio.com",
+    "project_id": "friendly-eats-974d6",
+    "storage_bucket": "friendly-eats-974d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365481229838:android:37b3f38d55939e73a1465f",
+        "android_client_info": {
+          "package_name": "com.coopnet.crypto_wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365481229838-8cqc6r77pacaicr6g44l10o9gbulphdd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhYssx_ye8S3bgiyINebKo31HY0_zsuks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365481229838-8cqc6r77pacaicr6g44l10o9gbulphdd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "365481229838-s79qf23262nlut1b2a6jm7a3soibcm2i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.coopnet.cryptoWallet"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
