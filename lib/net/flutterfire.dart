@@ -49,15 +49,26 @@ Future<bool> addCoin(String id, String amount) async {
     FirebaseFirestore.instance.runTransaction((transaction) async {
       DocumentSnapshot documentSnapshot =
           await transaction.get(documentReference);
-          if(!documentSnapshot.exists) {
-            documentReference.set({'Amount': value});
-            return true;
-          }
-          double newAmount = documentSnapshot.data()['Amount'] + value;
-          transaction.update(documentReference, {'Amount': newAmount});
-          return true;
+      if (!documentSnapshot.exists) {
+        documentReference.set({'Amount': value});
+        return true;
+      }
+      double newAmount = documentSnapshot.data()['Amount'] + value;
+      transaction.update(documentReference, {'Amount': newAmount});
+      return true;
     });
   } catch (e) {
     return false;
   }
+}
+
+Future<bool> removeCoin(String id) async {
+  String uid = FirebaseAuth.instance.currentUser.uid;
+  FirebaseFirestore.instance
+      .collection('Users')
+      .doc(uid)
+      .collection('Coins')
+      .doc(id)
+      .delete();
+  return true;
 }
